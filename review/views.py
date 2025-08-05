@@ -1,3 +1,4 @@
+#API management
 from rest_framework import generics
 from .models import CodePost, Comment
 from .serializers import CodePostSerializer, CommentSerializer
@@ -13,3 +14,6 @@ class CodePostRetrieveAPIView(generics.RetrieveAPIView):
 class CommentCreateAPIView(generics.CreateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
+
+
+
